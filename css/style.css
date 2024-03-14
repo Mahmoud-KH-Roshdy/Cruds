@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .input-one {
+    @apply w-full h-1/3 bg-gray-200 dark:bg-slate-800 outline-none  dark:border-none  my-1 text-black dark:text-white p-2 rounded capitalize;
+  }
+  .btn {
+    @apply w-full h-1/3   outline-none  dark:border-none  my-1 text-white p-2 rounded-3xl
+    dark:bg-violet-700 dark:hover:bg-violet-900 bg-red-600 hover:bg-red-800 transition duration-700  capitalize;
+  }
+}
+@layer utilities {
+  ::-webkit-scrollbar,
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 2px solid #fff;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #374151;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border: 2px solid #374151;
+  }
+}
